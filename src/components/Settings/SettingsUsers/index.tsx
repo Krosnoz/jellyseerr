@@ -137,7 +137,7 @@ const SettingsUsers = () => {
                           : settings.currentSettings.mediaServerType ===
                             MediaServerType.PLEX
                           ? 'Plex'
-                          : 'Jellyfin',
+                          : 'KrosMovie',
                     })}
                     <span className="label-tip">
                       {intl.formatMessage(messages.newPlexLoginTip, {
@@ -147,7 +147,7 @@ const SettingsUsers = () => {
                             : settings.currentSettings.mediaServerType ===
                               MediaServerType.PLEX
                             ? 'Plex'
-                            : 'Jellyfin',
+                            : 'KrosMovie',
                       })}
                     </span>
                   </label>

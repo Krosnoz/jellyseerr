@@ -385,7 +385,7 @@ const IssueDetails = () => {
                           mediaServerName: 'Plex',
                         })
                       : intl.formatMessage(messages.playonplex, {
-                          mediaServerName: 'Jellyfin',
+                          mediaServerName: 'KrosMovie',
                         })}
                   </span>
                 </Button>
@@ -432,7 +432,7 @@ const IssueDetails = () => {
                           mediaServerName: 'Plex',
                         })
                       : intl.formatMessage(messages.play4konplex, {
-                          mediaServerName: 'Jellyfin',
+                          mediaServerName: 'KrosMovie',
                         })}
                   </span>
                 </Button>
@@ -649,7 +649,7 @@ const IssueDetails = () => {
                         mediaServerName: 'Plex',
                       })
                     : intl.formatMessage(messages.playonplex, {
-                        mediaServerName: 'Jellyfin',
+                        mediaServerName: 'KrosMovie',
                       })}
                 </span>
               </Button>
@@ -695,7 +695,7 @@ const IssueDetails = () => {
                         mediaServerName: 'Plex',
                       })
                     : intl.formatMessage(messages.play4konplex, {
-                        mediaServerName: 'Jellyfin',
+                        mediaServerName: 'KrosMovie',
                       })}
                 </span>
               </Button>

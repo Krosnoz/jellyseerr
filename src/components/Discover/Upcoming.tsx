@@ -7,7 +7,7 @@ import type { MovieResult } from '@server/models/Search';
 import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  upcomingmovies: 'Upcoming Movies',
+  upcomingmovies: 'Films à venir',
 });
 
 const UpcomingMovies = () => {

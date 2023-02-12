@@ -56,7 +56,9 @@ const JellyfinLogin: React.FC<JellyfinLoginProps> = ({
         .required(
           intl.formatMessage(messages.validationhostrequired, {
             mediaServerName:
-              publicRuntimeConfig.JELLYFIN_TYPE == 'emby' ? 'Emby' : 'Jellyfin',
+              publicRuntimeConfig.JELLYFIN_TYPE == 'emby'
+                ? 'Emby'
+                : 'KrosMovie',
           })
         ),
       email: Yup.string()
@@ -109,7 +111,12 @@ const JellyfinLogin: React.FC<JellyfinLoginProps> = ({
           <Form>
             <div className="sm:border-t sm:border-gray-800">
               <label htmlFor="host" className="text-label">
-                {intl.formatMessage(messages.host, mediaServerFormatValues)}
+                {intl.formatMessage(messages.host, {
+                  mediaServerName:
+                    publicRuntimeConfig.JELLYFIN_TYPE == 'emby'
+                      ? 'Emby'
+                      : 'KrosMovie',
+                })}
               </label>
               <div className="mt-1 mb-2 sm:col-span-2 sm:mt-0">
                 <div className="flex rounded-md shadow-sm">
@@ -117,10 +124,12 @@ const JellyfinLogin: React.FC<JellyfinLoginProps> = ({
                     id="host"
                     name="host"
                     type="text"
-                    placeholder={intl.formatMessage(
-                      messages.host,
-                      mediaServerFormatValues
-                    )}
+                    placeholder={intl.formatMessage(messages.host, {
+                      mediaServerName:
+                        publicRuntimeConfig.JELLYFIN_TYPE == 'emby'
+                          ? 'Emby'
+                          : 'KrosMovie',
+                    })}
                   />
                 </div>
                 {errors.host && touched.host && (

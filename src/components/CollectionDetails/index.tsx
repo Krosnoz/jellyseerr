@@ -22,10 +22,10 @@ import { defineMessages, useIntl } from 'react-intl';
 import useSWR from 'swr';
 
 const messages = defineMessages({
-  overview: 'Overview',
-  numberofmovies: '{count} Movies',
-  requestcollection: 'Request Collection',
-  requestcollection4k: 'Request Collection in 4K',
+  overview: 'Aperçu',
+  numberofmovies: '{count} Films',
+  requestcollection: 'Demande de collection',
+  requestcollection4k: 'Demande de collection en 4K',
 });
 
 interface CollectionDetailsProps {

@@ -633,7 +633,7 @@ const ManageSlideOver = ({
                         : settings.currentSettings.mediaServerType ===
                           MediaServerType.PLEX
                         ? 'Plex'
-                        : 'Jellyfin',
+                        : 'KrosMovie',
                   })}
                 </div>
               </div>

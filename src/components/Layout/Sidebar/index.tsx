@@ -19,13 +19,13 @@ import { Fragment, useRef } from 'react';
 import { defineMessages, useIntl } from 'react-intl';
 
 export const menuMessages = defineMessages({
-  dashboard: 'Discover',
-  browsemovies: 'Movies',
-  browsetv: 'Series',
-  requests: 'Requests',
-  issues: 'Issues',
-  users: 'Users',
-  settings: 'Settings',
+  dashboard: 'Découvrir',
+  browsemovies: 'Films',
+  browsetv: 'Séries',
+  requests: 'Demandes',
+  issues: 'Problèmes',
+  users: 'Utilisateurs',
+  settings: 'Paramètres',
 });
 
 interface SidebarProps {
@@ -146,16 +146,9 @@ const Sidebar = ({ open, setClosed }: SidebarProps) => {
                   </div>
                   <div
                     ref={navRef}
-                    className="flex flex-1 flex-col overflow-y-auto pt-8 pb-8 sm:pb-4"
+                    className="flex flex-1 flex-col overflow-y-auto px-8 pt-8 pb-8 sm:pb-4"
                   >
-                    <div className="flex flex-shrink-0 items-center px-2">
-                      <span className="px-4 text-xl text-gray-50">
-                        <a href="/">
-                          <img src="/logo_full.svg" alt="Logo" />
-                        </a>
-                      </span>
-                    </div>
-                    <nav className="mt-16 flex-1 space-y-4 px-4">
+                    <nav className="flex-1 space-y-4 px-2">
                       {SidebarLinks.filter((link) =>
                         link.requiredPermission
                           ? hasPermission(link.requiredPermission, {
@@ -222,14 +215,7 @@ const Sidebar = ({ open, setClosed }: SidebarProps) => {
         <div className="sidebar flex w-64 flex-col">
           <div className="flex h-0 flex-1 flex-col">
             <div className="flex flex-1 flex-col overflow-y-auto pt-8 pb-4">
-              <div className="flex flex-shrink-0 items-center">
-                <span className="px-4 text-2xl text-gray-50">
-                  <a href="/">
-                    <img src="/logo_full.svg" alt="Logo" />
-                  </a>
-                </span>
-              </div>
-              <nav className="mt-16 flex-1 space-y-4 px-4">
+              <nav className="flex-1 space-y-4 px-4">
                 {SidebarLinks.filter((link) =>
                   link.requiredPermission
                     ? hasPermission(link.requiredPermission, {

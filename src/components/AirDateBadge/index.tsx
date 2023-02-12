@@ -2,8 +2,8 @@ import Badge from '@app/components/Common/Badge';
 import { defineMessages, FormattedRelativeTime, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  airedrelative: 'Aired {relativeTime}',
-  airsrelative: 'Airing {relativeTime}',
+  airedrelative: 'Diffusé {relativeTime}',
+  airsrelative: 'Diffusion {relativeTime}',
 });
 
 type AirDateBadgeProps = {

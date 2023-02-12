@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  languageMovies: '{language} Movies',
+  languageMovies: 'Films en {language}',
 });
 
 const DiscoverMovieLanguage = () => {

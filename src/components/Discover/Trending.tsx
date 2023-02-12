@@ -11,7 +11,7 @@ import type {
 import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  trending: 'Trending',
+  trending: 'Tendance',
 });
 
 const Trending = () => {

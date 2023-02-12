@@ -7,7 +7,7 @@ import type { TvResult } from '@server/models/Search';
 import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  upcomingtv: 'Upcoming Series',
+  upcomingtv: 'Séries à venir',
 });
 
 const DiscoverTvUpcoming = () => {

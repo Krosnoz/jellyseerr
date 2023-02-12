@@ -6,7 +6,7 @@ import { defineMessages, useIntl } from 'react-intl';
 import useSWR from 'swr';
 
 const messages = defineMessages({
-  recentlyAdded: 'Recently Added',
+  recentlyAdded: 'Récemment ajouté',
 });
 
 const RecentlyAddedSlider = () => {

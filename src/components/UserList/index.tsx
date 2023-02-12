@@ -524,7 +524,7 @@ const UserList = () => {
                       mediaServerName: 'Plex',
                     })
                   : intl.formatMessage(messages.importfrommediaserver, {
-                      mediaServerName: 'Jellyfin',
+                      mediaServerName: 'KrosMovie',
                     })}
               </span>
             </Button>
@@ -668,7 +668,7 @@ const UserList = () => {
                 ) : user.userType === UserType.JELLYFIN ? (
                   <Badge badgeType="default">
                     {intl.formatMessage(messages.mediaServerUser, {
-                      mediaServerName: 'Jellyfin',
+                      mediaServerName: 'KrosMovie',
                     })}
                   </Badge>
                 ) : null}

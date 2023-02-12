@@ -34,7 +34,7 @@ import { useToasts } from 'react-toast-notifications';
 import useSWR from 'swr';
 
 const messages = defineMessages({
-  discover: 'Discover',
+  discover: 'Découvrir',
   emptywatchlist:
     'Media added to your <PlexWatchlistSupportLink>Plex Watchlist</PlexWatchlistSupportLink> will appear here.',
   resettodefault: 'Reset to Default',

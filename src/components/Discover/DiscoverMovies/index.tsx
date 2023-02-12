@@ -19,17 +19,17 @@ import { useState } from 'react';
 import { defineMessages, useIntl } from 'react-intl';
 
 const messages = defineMessages({
-  discovermovies: 'Movies',
+  discovermovies: 'Films',
   activefilters:
-    '{count, plural, one {# Active Filter} other {# Active Filters}}',
-  sortPopularityAsc: 'Popularity Ascending',
-  sortPopularityDesc: 'Popularity Descending',
-  sortReleaseDateAsc: 'Release Date Ascending',
-  sortReleaseDateDesc: 'Release Date Descending',
-  sortTmdbRatingAsc: 'TMDB Rating Ascending',
-  sortTmdbRatingDesc: 'TMDB Rating Descending',
-  sortTitleAsc: 'Title (A-Z) Ascending',
-  sortTitleDesc: 'Title (Z-A) Descending',
+    '{count, plural, one {# Filtre actif} other {# Filtres actifs}}',
+  sortPopularityAsc: 'Popularité croissante',
+  sortPopularityDesc: 'Popularité décroissante',
+  sortReleaseDateAsc: 'Date de sortie croissante',
+  sortReleaseDateDesc: 'Date de sortie décroissante',
+  sortTmdbRatingAsc: 'Note TMDB croissante',
+  sortTmdbRatingDesc: 'Note TMDB décroissante',
+  sortTitleAsc: 'Titre (A-Z) croissant',
+  sortTitleDesc: 'Titre (Z-A) décroissant',
 });
 
 const SortOptions: Record<string, TMDBSortOptions> = {

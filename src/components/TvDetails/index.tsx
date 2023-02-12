@@ -282,7 +282,7 @@ const TvDetails = ({ tv }: TvDetailsProps) => {
       return intl.formatMessage(messages.play, { mediaServerName: 'Plex' });
     }
 
-    return intl.formatMessage(messages.play, { mediaServerName: 'Jellyfin' });
+    return intl.formatMessage(messages.play, { mediaServerName: 'KrosMovie' });
   }
 
   function getAvalaible4kMediaServerName() {
@@ -294,7 +294,9 @@ const TvDetails = ({ tv }: TvDetailsProps) => {
       return intl.formatMessage(messages.play4k, { mediaServerName: 'Plex' });
     }
 
-    return intl.formatMessage(messages.play4k, { mediaServerName: 'Jellyfin' });
+    return intl.formatMessage(messages.play4k, {
+      mediaServerName: 'KrosMovie',
+    });
   }
 
   return (

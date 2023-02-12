@@ -1,7 +1,6 @@
 import Accordion from '@app/components/Common/Accordion';
 import ImageFader from '@app/components/Common/ImageFader';
 import PageTitle from '@app/components/Common/PageTitle';
-import LanguagePicker from '@app/components/Layout/LanguagePicker';
 import LocalLogin from '@app/components/Login/LocalLogin';
 import PlexLoginButton from '@app/components/PlexLoginButton';
 import useSettings from '@app/hooks/useSettings';
@@ -21,7 +20,7 @@ const messages = defineMessages({
   signin: 'Sign In',
   signinheader: 'Sign in to continue',
   signinwithplex: 'Use your Plex account',
-  signinwithjellyfin: 'Use your {mediaServerName} account',
+  signinwithjellyfin: 'Utilisez votre compte {mediaServerName}',
   signinwithoverseerr: 'Use your {applicationTitle} account',
 });
 
@@ -73,7 +72,7 @@ const Login = () => {
   });
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-gray-900 py-14">
+    <div className="relative flex min-h-screen flex-col justify-center bg-gray-900 py-14">
       <PageTitle title={intl.formatMessage(messages.signin)} />
       <ImageFader
         backgroundImages={
@@ -82,11 +81,7 @@ const Login = () => {
           ) ?? []
         }
       />
-      <div className="absolute top-4 right-4 z-50">
-        <LanguagePicker />
-      </div>
       <div className="relative z-40 mt-10 flex flex-col items-center px-4 sm:mx-auto sm:w-full sm:max-w-md">
-        <img src="/logo_stacked.svg" className="mb-10 max-w-full" alt="Logo" />
         <h2 className="mt-2 text-center text-3xl font-extrabold leading-9 text-gray-100">
           {intl.formatMessage(messages.signinheader)}
         </h2>
@@ -140,7 +135,7 @@ const Login = () => {
                           mediaServerName:
                             publicRuntimeConfig.JELLYFIN_TYPE == 'emby'
                               ? 'Emby'
-                              : 'Jellyfin',
+                              : 'KrosMovie',
                         })}
                   </button>
                   <AccordionContent isOpen={openIndexes.includes(0)}>
