@@ -1,6 +1,7 @@
 version: '3'
 services:
-  overseerr:
+  jellyseer:
+    container_name: jellyseer
     build:
       context: .
       dockerfile: Dockerfile.local
