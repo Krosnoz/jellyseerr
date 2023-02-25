@@ -139,6 +139,10 @@ const Login = () => {
                         })}
                   </button>
                   <AccordionContent isOpen={openIndexes.includes(0)}>
+                    <p className="p-2 pt-6 text-center text-sm text-white">
+                      Si vous utilisez le compte Guest, remplissez seulement le
+                      nom d&apos;utilisateur avec Guest
+                    </p>
                     <div className="px-10 py-8">
                       {settings.currentSettings.mediaServerType ==
                       MediaServerType.PLEX ? (
