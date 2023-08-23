@@ -79,6 +79,8 @@ export const sliderTitles = defineMessages({
   tvgenres: 'Genres de séries',
   studios: 'Studios',
   networks: 'Réseaux',
+  tmdbtvstreamingservices: 'Services de streaming de séries TV TMDB',
+  tmdbmoviestreamingservices: 'Services de streaming de films TMDB',
   tmdbmoviekeyword: 'Mot-clé de film TMDB',
   tmdbtvkeyword: 'Mot-clé de série TMDB',
   tmdbmoviegenre: 'Genre de film TMDB',
